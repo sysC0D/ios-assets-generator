@@ -7,11 +7,11 @@ No dependencies.
 
 ## Usage
 
-`Default-Input.png` and `Icon-Input.png` contain the initial graphics for the launch image and icons respectively.
+`Default-Input-Landscape.png` & `Default-Input-Portrait.png`  & `Icon-Input.png` contain the initial graphics for the launch image and icons respectively.
 
 From Terminal run:
 
-`./CreateiOSLaunchImages.sh`
+`./CreateiOSLaunchImages.sh -l Default-Input-Landscape.png -p Default-Input-Portrait.png`
 
 and
 
@@ -29,8 +29,8 @@ Remove variants that are not needed (e.g. iPad Portrait) from the catalogs to op
 
 ## For best results
 
-`Default-Input.png`:
-* Landscape
+`Default-Input-*.png`:
+* Landscape / Portrait
 * Aspect ratio 4:3 (with content croppable to 16:9)
 * Highest quality if at least 2208px wide
 
@@ -43,7 +43,6 @@ Remove variants that are not needed (e.g. iPad Portrait) from the catalogs to op
 
 * Square (1:1 aspect ratio)
 * Highest quality if at least 1024x1024px
-
 
 
 ## Credits
