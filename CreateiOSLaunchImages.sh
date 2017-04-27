@@ -59,7 +59,7 @@ function portrait_generation () {
 	sips -Z 1136 -c 1136 640 $nameimg --out Images.xcassets/LaunchImage.launchimage/Default640x1136.png
 
 	# iPhone 5.5" @3x - portrait
-	sips -Z 2208 -c 2208 1242 $nameimg Images.xcassets/LaunchImage.launchimage/Default1242x2208.png
+	sips -Z 2208 -c 2208 1242 $nameimg --out Images.xcassets/LaunchImage.launchimage/Default1242x2208.png
 	# iPhone 4.7" @2x
 	sips -Z 1334 -c 1334 750 $nameimg --out Images.xcassets/LaunchImage.launchimage/Default750x1334.png
 	
@@ -121,7 +121,7 @@ then
 		echo "Portrait generation done"
 	fi	
 
-	if [ -f $arg_landscapeimg ] && [ -f $arg_portraitimg ]
+	if [ ! -f $arg_landscapeimg ] && [ ! -f $arg_portraitimg ]
 	then
 		echo "File not found"
 		exit $STATE_UNKN
