@@ -15,6 +15,11 @@ sips -Z 120 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon120.png
 sips -Z 80 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon80.png
 
 # iPhone
+# Notification
+# 20pt 3x
+sips -Z 60 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon60.png
+
+# iPhone
 # App - iOS 5,6
 # 57pt 1x,2x
 sips -Z 114 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon114.png
@@ -43,6 +48,11 @@ sips -Z 40 Images.xcassets/AppIcon.appiconset/Icon80.png --out Images.xcassets/A
 # 50pt 1x,2x
 sips -Z 100 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon100.png
 sips -Z 50 Images.xcassets/AppIcon.appiconset/Icon100.png --out Images.xcassets/AppIcon.appiconset/Icon50.png
+
+# iPad
+# Notification
+# 20pt 1x
+sips -Z 20 Icon-Input.png --out Images.xcassets/AppIcon.appiconset/Icon20.png
 
 # iPad
 # App iOS 5,6
